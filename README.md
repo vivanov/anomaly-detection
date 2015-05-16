@@ -1,7 +1,7 @@
 Anomaly Detection using Multivariate Gaussian Distribution
 ====================
 
-Anomaly Detection example using Multivariate Gaussian Distribution and Apache Spark MLlib
+Anomaly Detection example using _Multivariate Gaussian Distribution_ and _Apache Spark MLlib_
 
 Description
 -----------
@@ -19,37 +19,41 @@ Output:
 
 Application creates three subdirectories under output directory (specified as an input parameter):
 
-- /ps contains probability density value for each data vector
-- /eps_f1 contains pairs of epsilon value and corresponding F1 score
-- /outliers contains actual output of the algorithm: index, data vector and probability density value for each detected anomaly
+- `/ps` contains probability density value for each data vector
+- `/eps_f1` contains pairs of epsilon value and corresponding F1 score
+- `/outliers` contains actual output of the algorithm: index, data vector and probability density value for each detected anomaly
 
 Notes
 -----------
 
-- It's allowed to put comment lines that should start with # symbol and empty lines into data files
+- It's allowed to put comment lines that should start with `#` symbol and empty lines into data files
 
 Example Input and Output
 ------------------------
 
 ### Input 
 
-# Data
+#### Data
 
+```
  15.63593869777692 14.53784766638118
  13.12046241712303 15.47794525058771
  14.65489847052287 15.08339526603583
-    
+```
 
-# Cross validation data and assigned flags
+#### Cross validation data and assigned flags
 
-
+```
  14.63535869776363 15.73463454522354 0
  21.23424241716346 11.63463435423546 1
  15.84705234224234 13.02402940942027 0
+```
 
-### Output 
+### Output
 
-# Outliers
+#### Outliers
 
+```
 (2 ,([25.24204234224854,18.24237567943457],4.374744745738043E-6))
 (11,([19.83405277224942,10.19444940942003],5.745672810153831E-8))
+```
